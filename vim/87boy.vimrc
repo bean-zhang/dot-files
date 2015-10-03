@@ -1,7 +1,11 @@
+"syntax enable
+"set background=dark
+"colorscheme solarized
+
 " syntax enable		" Enable syntax highlighting
 syntax on			" Turn on syntax highlighting
 set number			" Show line numbers
-set textwidth=80	" Line wrap (number of cols)
+"set textwidth=80	" Line wrap (number of cols)
 set showmatch		" Highlight matching brace
 set visualbell		" Use visual bell (no beeping)
 

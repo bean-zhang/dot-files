@@ -6,5 +6,5 @@
 # email: sjtuzb@gmail.com
 #
 
-ln -s ~/git/dot-files/87boy.vimrc ~/.vimrc
+ln -s ~/git/dot-files/vim/87boy.vimrc ~/.vimrc
 
