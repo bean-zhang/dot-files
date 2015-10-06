@@ -11,6 +11,8 @@ git config --global -l
 git config --global user.name "Bin Zhang"
 git config --global user.email "sjtuzb@gmail.com"
 
+git config --global core.editor vi
+
 git config --global color.branch auto
 git config --global color.diff auto
 git config --global color.interactive auto
