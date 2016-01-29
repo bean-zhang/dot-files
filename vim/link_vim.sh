@@ -6,10 +6,13 @@
 # email: sjtuzb@gmail.com
 #
 
+dot_files=~/git/dot-files
 vimrc=~/.vimrc
-vimrc_87boy=~/git/dot-files/vim/87boy.vimrc
+vimrc_87boy=${dot_files}/vim/87boy.vimrc
+gvimrc=~/.gvimrc
+gvimrc_87boy=${dot_files}/vim/87boy.gvimrc
 vim=~/.vim
-vim_87boy=~/git/dot-files/vim/.vim
+vim_87boy=${dot_files}/vim/.vim
 
 if [ -f "${vimrc}" ]
 then
@@ -17,6 +20,14 @@ then
 	ln -s ${vimrc_87boy} ${vimrc}
 else
 	ln -s ${vimrc_87boy} ${vimrc}
+fi
+
+if [ -f "${gvimrc}" ]
+then
+	mv ${gvimrc} ${gvimrc}.bak
+	ln -s ${gvimrc_87boy} ${gvimrc}
+else
+	ln -s ${gvimrc_87boy} ${gvimrc}
 fi
 
 if [ -d "${vim}" ]
