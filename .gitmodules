@@ -1,3 +1,22 @@
 [submodule "powerline"]
     path = vim/.vim/bundle/powerline
     url = https://github.com/powerline/powerline.git
+
+[submodule "STL-Syntax"]
+    path = vim/.vim/bundle/STL-Syntax
+    url = https://github.com/Mizuchi/STL-Syntax.git
+[submodule "a.vim"]
+    path = vim/.vim/bundle/a.vim
+    url = https://github.com/vim-scripts/a.vim.git
+[submodule "auto-pairs"]
+    path = vim/.vim/bundle/auto-pairs
+    url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "vim-indent-guides"]
+    path = vim/.vim/bundle/vim-indent-guides
+    url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "vim-pathogen"]
+    path = vim/.vim/bundle/vim-pathogen
+    url = https://github.com/tpope/vim-pathogen.git
+[submodule "vim-powerline"]
+    path = vim/.vim/bundle/vim-powerline
+    url = https://github.com/Lokaltog/vim-powerline.git
