@@ -11,6 +11,11 @@ colorscheme molokai
 " [Monokai](https://github.com/sickill/vim-monokai)
 "colorscheme monokai
 set guifont=Courier_new:h16:b:cDEFAULT
+" Refer to http://edyfox.codecarver.org/html/vim_fileencodings_detection.html
+set encoding=utf-8      " The internal encoding
+set termencoding=utf-8  " The encoding displayed
+set fileencoding=utf-8  " The encoding written to file
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,gb2312,big5,euc-jp,euc-kr,latin1
 syntax enable			" Enable syntax processing
 syntax on				" Turn on syntax highlighting
 
@@ -31,12 +36,12 @@ set smartindent		    " Enable smart-indent
 set number				" Show line numbers
 "set linebreak          " Break lines at word (requires Wrap lines)
 "set showbreak=+++      " Wrap-broken line prefix
-"set textwidth=80		" Line wrap (number of cols)
+set textwidth=80		" Line wrap (number of cols)
 set laststatus=2       
 set showcmd				" Show entered commonds in bottom bar
 set showmatch           " Highlight matching bracket [{()}]
 set cursorline          " Highlight current line
-"set cursorcolumn        " Highlight current column
+set cursorcolumn        " Highlight current column
 set ruler				" Show row and column ruler information
 filetype on             " Enable filetype detection
 filetype indent on      " Load filetype-specific indent files

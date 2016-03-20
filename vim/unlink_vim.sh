@@ -2,8 +2,8 @@
 #
 # unlink ~/.vimrc
 #
-# author:	Bin Zhang
-# email:	sjtuzb@gmail.com
+# author: Bean Zhang
+# email: sjtuzb@gmail.com
 #
 
 vimrc=~/.vimrc

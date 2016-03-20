@@ -1,1 +1,5 @@
+# Mac OS X
 .DS_Store
+
+# Vim
+.netrwhist

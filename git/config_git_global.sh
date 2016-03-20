@@ -2,13 +2,13 @@
 #
 # config git global
 #
-# author: Bin Zhang
+# author: Bean Zhang
 # email: sjtuzb@gmail.com
 #
 
 git config --global -l
 
-git config --global user.name "Bin Zhang"
+git config --global user.name "Bean Zhang"
 git config --global user.email "sjtuzb@gmail.com"
 
 git config --global core.editor vi

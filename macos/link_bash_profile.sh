@@ -2,7 +2,7 @@
 #
 # link ~/.bash_profile to .bash_profile
 #
-# author: Bin Zhang
+# author: Bean Zhang
 # email: sjtuzb@gmail.com
 #
 bash_profile=~/.bash_profile
