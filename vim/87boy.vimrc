@@ -32,6 +32,8 @@ set smartindent		    " Enable smart-indent
 set formatoptions-=r    " Disable continuation of comments to the next line, :help fo-table
 "set paste       " To turn off autoindent when you paste code
 "set nopaste     " After you pasted your code, turn off the paste-mode
+"set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<    "Make vim show all white spaces as a character
+"set list
 
 """"""""""""""""""""
 " UI Config
