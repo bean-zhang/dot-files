@@ -29,6 +29,7 @@ set softtabstop=4		" Number of spaces in tab when editing
 set smarttab			" Enable smart-tabs
 set autoindent			" Auto-indent new lines
 set smartindent		    " Enable smart-indent
+set formatoptions-=r    " Disable continuation of comments to the next line, :help fo-table
 
 """"""""""""""""""""
 " UI Config
