@@ -30,8 +30,8 @@ set smarttab			" Enable smart-tabs
 set autoindent			" Auto-indent new lines
 set smartindent		    " Enable smart-indent
 set formatoptions-=r    " Disable continuation of comments to the next line, :help fo-table
-set paste       " To turn off autoindent when you paste code
-set nopaste     " After you pasted your code, turn off the paste-mode
+"set paste       " To turn off autoindent when you paste code
+"set nopaste     " After you pasted your code, turn off the paste-mode
 
 """"""""""""""""""""
 " UI Config
