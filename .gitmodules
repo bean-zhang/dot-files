@@ -1,22 +1,81 @@
-[submodule "powerline"]
-    path = vim/.vim/bundle/powerline
-    url = https://github.com/powerline/powerline.git
-
-[submodule "STL-Syntax"]
-    path = vim/.vim/bundle/STL-Syntax
-    url = https://github.com/Mizuchi/STL-Syntax.git
-[submodule "a.vim"]
-    path = vim/.vim/bundle/a.vim
-    url = https://github.com/vim-scripts/a.vim.git
-[submodule "auto-pairs"]
-    path = vim/.vim/bundle/auto-pairs
-    url = https://github.com/jiangmiao/auto-pairs.git
-[submodule "vim-indent-guides"]
-    path = vim/.vim/bundle/vim-indent-guides
-    url = https://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "vim-pathogen"]
-    path = vim/.vim/bundle/vim-pathogen
-    url = https://github.com/tpope/vim-pathogen.git
+[submodule "Vundle.vim"]
+    path = vim/.vim/bundle/Vundle.vim
+    url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "vim-colors-solarized"]
+    path = vim/.vim/bundle/vim-colors-solarized
+    url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "molokai"]
+    path = vim/.vim/bundle/molokai
+    url = https://github.com/tomasr/molokai.git
+[submodule "phd"]
+    path = vim/.vim/bundle/phd
+    url = https://github.com/vim-scripts/phd.git
 [submodule "vim-powerline"]
     path = vim/.vim/bundle/vim-powerline
     url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "vim-cpp-enhanced-highlight"]
+    path = vim/.vim/bundle/vim-cpp-enhanced-highlight
+    url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "vim-indent-guides"]
+    path = vim/.vim/bundle/vim-indent-guides
+    url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "vim-fswitch"]
+    path = vim/.vim/bundle/vim-fswitch
+    url = https://github.com/derekwyatt/vim-fswitch.git
+[submodule "vim-signature"]
+    path = vim/.vim/bundle/vim-signature
+    url = https://github.com/kshenoy/vim-signature.git
+[submodule "BOOKMARKS--Mark-and-Highlight-Full-Lines"]
+    path = vim/.vim/bundle/BOOKMARKS--Mark-and-Highlight-Full-Lines
+    url = https://github.com/vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines.git
+[submodule "tagbar"]
+    path = vim/.vim/bundle/tagbar
+    url = https://github.com/vim-scripts/majutsushi/tagbar.git
+[submodule "indexer.tar.gz"]
+    path = vim/.vim/bundle/indexer.tar.gz
+    url = https://github.com/vim-scripts/indexer.tar.gz.git
+[submodule "DfrankUtil"]
+    path = vim/.vim/bundle/DfrankUtil
+    url = https://github.com/vim-scripts/DfrankUtil.git
+[submodule "vimprj"]
+    path = vim/.vim/bundle/vimprj
+    url = https://github.com/vim-scripts/vimprj.git
+[submodule "ctrlsf.vim"]
+    path = vim/.vim/bundle/ctrlsf.vim
+    url = https://github.com/dyng/ctrlsf.vim.git
+[submodule "vim-multiple-cursors"]
+    path = vim/.vim/bundle/vim-multiple-cursors
+    url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "nerdcommenter"]
+    path = vim/.vim/bundle/nerdcommenter
+    url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "DrawIt"]
+    path = vim/.vim/bundle/DrawIt
+    url = https://github.com/vim-scripts/DrawIt.git
+[submodule "ultisnips"]
+    path = vim/.vim/bundle/ultisnips
+    url = https://github.com/SirVer/ultisnips.git
+[submodule "YouCompleteMe"]
+    path = vim/.vim/bundle/YouCompleteMe
+    url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "vim-protodef"]
+    path = vim/.vim/bundle/vim-protodef
+    url = https://github.com/derekwyatt/vim-protodef.git
+[submodule "nerdtree"]
+    path = vim/.vim/bundle/nerdtree
+    url = https://github.com/scrooloose/nerdtree.git
+[submodule "minibufexpl.vim"]
+    path = vim/.vim/bundle/minibufexpl.vim
+    url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "wildfire.vim"]
+    path = vim/.vim/bundle/wildfire.vim
+    url = https://github.com/gcmt/wildfire.vim.git
+[submodule "gundo.vim"]
+    path = vim/.vim/bundle/gundo.vim
+    url = https://github.com/sjl/gundo.vim.git
+[submodule "vim-easymotion"]
+    path = vim/.vim/bundle/vim-easymotion
+    url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "vim-instant-markdown"]
+    path = vim/.vim/bundle/vim-instant-markdown
+    url = https://github.com/suan/vim-instant-markdown.git
