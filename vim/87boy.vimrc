@@ -26,25 +26,33 @@ vnoremap <Leader>y "+y
 nmap <Leader>p "+p
 
 " 定义快捷键关闭当前分割窗口
-nmap <Leader>q :q<CR>
+nnoremap <Leader>q :q<CR>
+" 定义快捷键强制关闭当前分割窗口
+nnoremap <Leader>q! :q!<CR>
 " 定义快捷键保存当前窗口内容
-nmap <Leader>w :w<CR>
-" 定义快捷键保存所有窗口内容并退出 vim
-nmap <Leader>WQ :wa<CR>:q<CR>
+nnoremap <Leader>w :w<CR>
+" 定义快捷键保存并退出当前窗口
+nnoremap <Leader>wq :wq<CR>
 " 不做任何保存，直接退出 vim
-nmap <Leader>Q :qa!<CR>
+nnoremap <Leader>Q :qa<CR>
+" 不做任何保存，强制退出 vim
+nnoremap <Leader>Q! :qa!<CR>
+" 定义快捷键保存所有窗口内容
+nnoremap <Leader>W :wa<CR>
+" 定义快捷键保存所有窗口内容并退出 vim
+nnoremap <Leader>WQ :wa<CR>:q<CR>
 
 " 设置快捷键遍历子窗口
-" 依次遍历
+" 依次遍历子窗口
 nnoremap nw <C-W><C-W>
-" 跳转至右方的窗口
-nnoremap <Leader>lw <C-W>l
-" 跳转至方的窗口
+" 跳转至左方的窗口
 nnoremap <Leader>hw <C-W>h
-" 跳转至上方的子窗口
-nnoremap <Leader>kw <C-W>k
 " 跳转至下方的子窗口
 nnoremap <Leader>jw <C-W>j
+" 跳转至上方的子窗口
+nnoremap <Leader>kw <C-W>k
+" 跳转至右方的窗口
+nnoremap <Leader>lw <C-W>l
 
 " 定义快捷键在结对符之间跳转
 nmap <Leader>M %
@@ -52,22 +60,27 @@ nmap <Leader>M %
 " <<
 
 " 让配置变更立即生效
-autocmd BufWritePost $MY_VIM_RC source $MY_VIM_RC
+"autocmd BufWritePost $MY_VIM_RC source $MY_VIM_RC
 
 " >>
 " 其他
 
 " 开启实时搜索功能
 set incsearch
+set smartcase			" Enable smart-case search
 
 " 搜索时大小写不敏感
 set ignorecase
+set visualbell			" Use visual bell (no beeping)
 
 " 关闭兼容模式
 set nocompatible
+set backspace=2         " Make backspace work like most other apps
+set backspace=indent,eol,start
 
 " vim 自身命令行模式智能补全
 set wildmenu
+set lazyredraw          " Redraw only when we need to.
 
 " <<
 
@@ -153,11 +166,17 @@ map <silent> <F11> :call ToggleFullscreen()<CR>
 " 总是显示状态栏
 set laststatus=2
 
+set showcmd				" Show entered commonds in bottom bar
+set showmatch           " Highlight matching bracket [{()}]
+
 " 显示光标当前位置
 set ruler
 
 " 开启行号显示
 set number
+"set linebreak          " Break lines at word (requires Wrap lines)
+"set showbreak=+++      " Wrap-broken line prefix
+"set textwidth=80		" Line wrap (number of cols)
 
 " 高亮显示当前行/列
 set cursorline
@@ -173,6 +192,12 @@ set hlsearch
 
 " 设置 gvim 显示字体
 set guifont=YaHei\ Consolas\ Hybrid\ 12
+"set guifont=Courier_new:h16:b:cDEFAULT
+" Refer to http://edyfox.codecarver.org/html/vim_fileencodings_detection.html
+set encoding=utf-8      " The internal encoding
+set termencoding=utf-8  " The encoding displayed
+set fileencoding=utf-8  " The encoding written to file
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,gb2312,big5,euc-jp,euc-kr,latin1
 
 " 禁止折行
 set nowrap
@@ -206,6 +231,15 @@ set tabstop=4
 set shiftwidth=4
 " 让 vim 把连续数量的空格视为一个制表符
 set softtabstop=4
+set smarttab			" Enable smart-tabs
+set autoindent			" Auto-indent new lines
+set smartindent		    " Enable smart-indent
+set formatoptions-=r    " Disable continuation of comments to the next line, :help fo-table
+"set paste       " To turn off autoindent when you paste code
+"set nopaste     " After you pasted your code, turn off the paste-mode
+"set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<    "Make vim show all white spaces as a character
+"set list
+
 
 " 缩进可视化插件 Indent Guides
 " 随 vim 自启动
@@ -222,11 +256,16 @@ nmap <silent> <Leader>i <Plug>IndentGuidesToggle
 " >>
 " 代码折叠
 
+"set foldenable          " Enable folding
+" 启动 vim 时关闭折叠代码
+set nofoldenable
 " 基于缩进或语法进行代码折叠
 "set foldmethod=indent
 set foldmethod=syntax
-" 启动 vim 时关闭折叠代码
-set nofoldenable
+set foldlevelstart=10   " Open most folds by default
+set foldnestmax=10      " 10 nested fold max
+" <space> open/close folds
+nnoremap <space> za
 
 " <<
 
