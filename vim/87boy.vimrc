@@ -233,10 +233,12 @@ set shiftwidth=4
 set softtabstop=4
 set smarttab			" Enable smart-tabs
 set autoindent			" Auto-indent new lines
+set cindent
 set smartindent		    " Enable smart-indent
 set formatoptions-=r    " Disable continuation of comments to the next line, :help fo-table
 "set paste       " To turn off autoindent when you paste code
 "set nopaste     " After you pasted your code, turn off the paste-mode
+set pastetoggle=<F2>
 "set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<    "Make vim show all white spaces as a character
 "set list
 
@@ -498,9 +500,9 @@ nmap <Leader>man :Man 3 <cword><CR>
 " 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
 nmap <Leader>fl :NERDTreeToggle<CR>
 " 设置 NERDTree 子窗口宽度
-let NERDTreeWinSize=22
+let NERDTreeWinSize=24
 " 设置 NERDTree 子窗口位置
-let NERDTreeWinPos="right"
+let NERDTreeWinPos="left"
 " 显示隐藏文件
 let NERDTreeShowHidden=1
 " NERDTree 子窗口中不显示冗余帮助信息
