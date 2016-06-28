@@ -79,3 +79,16 @@
 [submodule "vim-instant-markdown"]
     path = vim/.vim/bundle/vim-instant-markdown
     url = https://github.com/suan/vim-instant-markdown.git
+[submodule "fcitx.vim"]
+    path = vim/.vim/bundle/fcitx.vim
+    url = https://github.com/lilydjwg/fcitx.vim.git
+[submodule "Mark"]
+    path = vim/.vim/bundle/Mark
+    url = https://github.com/vim-scripts/Mark.git
+[submodule "taglist.vim"]
+    path = vim/.vim/bundle/taglist.vim
+    url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "winmanager"]
+    path = vim/.vim/bundle/winmanager
+    url = https://github.com/vim-scripts/winmanager.git
+

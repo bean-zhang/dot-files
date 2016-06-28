@@ -8,9 +8,9 @@
 
 dot_files=~/git/dot-files
 vimrc=~/.vimrc
-vimrc_87boy=${dot_files}/vim/87boy.vimrc
+vimrc_87boy=${dot_files}/vim/.vimrc
 gvimrc=~/.gvimrc
-gvimrc_87boy=${dot_files}/vim/87boy.gvimrc
+gvimrc_87boy=${dot_files}/vim/.gvimrc
 vim=~/.vim
 vim_87boy=${dot_files}/vim/.vim
 
