@@ -2,7 +2,7 @@
 
 "nmap <F3> <Esc>:w<CR>
 nmap <F3> :vimgrep <cword> %<CR>:copen<CR>
-nmap <F4> <C-w>w
+map <F4> <C-w>w
 nmap <F8> :qall<CR>
 nmap <F11> <C-t>
 nmap <F12> <C-]>
@@ -268,7 +268,7 @@ set fileencoding=utf-8  " The encoding written to file
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,gb2312,big5,euc-jp,euc-kr,latin1
 
 " 禁止折行
-set nowrap
+"set nowrap
 
 " 设置状态栏主题风格
 let g:Powerline_colorscheme='solarized256'
