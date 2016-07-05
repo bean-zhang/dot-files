@@ -12,3 +12,7 @@ alias ll="ls -aFGhl"
 
 export MY_VIM_RC=~/.vimrc
 
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
