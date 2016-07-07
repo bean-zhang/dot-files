@@ -92,6 +92,3 @@
     path = vim/.vim/bundle/winmanager
     url = https://github.com/vim-scripts/winmanager.git
 
-[submodule "vim/.vim/bundle/vim-indent-guides"]
-	path = vim/.vim/bundle/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git
