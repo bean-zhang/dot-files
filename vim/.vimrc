@@ -2,7 +2,8 @@
 
 "nmap <F3> <Esc>:w<CR>
 nmap <F3> :vimgrep <cword> %<CR>:copen<CR>
-map <F4> <C-w>w
+nmap <F4> <C-w>w
+imap <F4> <Esc><C-w>w
 nmap <F8> :qall<CR>
 nmap <F11> <C-t>
 nmap <F12> <C-]>
