@@ -53,7 +53,7 @@ nnoremap <Leader>WQ :wa<CR>:q<CR>
 
 " 设置快捷键遍历子窗口
 " 依次遍历子窗口
-nnoremap nw <C-W><C-W>
+"nnoremap nw <C-W><C-W>
 " 跳转至左方的窗口
 nnoremap <Leader>hw <C-W>h
 " 跳转至下方的子窗口
@@ -249,7 +249,7 @@ set number
 
 " 高亮显示当前行/列
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 
 " 高亮显示搜索结果
 set hlsearch
@@ -333,7 +333,7 @@ set foldenable          " Enable folding
 " 基于缩进或语法进行代码折叠
 "set foldmethod=indent
 set foldmethod=syntax
-set foldlevelstart=0
+set foldlevelstart=3
 "set foldlevelstart=10   " Open most folds by default
 set foldnestmax=10      " 10 nested fold max
 " <space> open/close folds
