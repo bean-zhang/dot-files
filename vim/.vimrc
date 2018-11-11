@@ -53,7 +53,7 @@ nnoremap <Leader>WQ :wa<CR>:q<CR>
 
 " 设置快捷键遍历子窗口
 " 依次遍历子窗口
-"nnoremap nw <C-W><C-W>
+nnoremap nw <C-W><C-W>
 " 跳转至左方的窗口
 nnoremap <Leader>hw <C-W>h
 " 跳转至下方的子窗口
@@ -336,6 +336,9 @@ set foldmethod=indent
 set foldlevelstart=9
 "set foldlevelstart=10   " Open most folds by default
 set foldnestmax=10      " 10 nested fold max
+" za: open or close this fold
+" zM: close all folds
+" zR: open all folds
 " <space> open/close folds
 nnoremap <space> za
 

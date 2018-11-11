@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MyClass	lib/my_class.h	/^class MyClass $/;"	c	language:C++
+MyClass::printMsg	lib/my_class.cpp	/^void MyClass::printMsg (void) $/;"	f	language:C++	class:MyClass	signature:(void)
+MyClass::printMsg	lib/my_class.h	/^		void printMsg(void); 	 $/;"	p	language:C++	class:MyClass	access:public	signature:(void)
+endl	lib/my_class.cpp	/^	std::cout << "I'M MyClass!" << std::endl; $/;"	m	language:C++	class:std	file:
+endl	lib/my_class.cpp	/^	std::cout << i << std::endl; $/;"	m	language:C++	class:std	file:
+endl	main.cpp	/^	cout << g_num << name << endl; $/;"	l	language:C++
+endl	main.cpp	/^	std::cout << ch << std::endl; $/;"	m	language:C++	class:std	file:
+format	tags	/^!_TAG_FILE_FORMAT	2	\/extended format; --format=1 will not append ;" to lines\/$/;"	v	language:C++
+g_num	main.cpp	/^int g_num = 128; $/;"	v	language:C++
+main	main.cpp	/^int main (void) $/;"	f	language:C++	signature:(void)
+name	main.cpp	/^	const string name = "bean.gnu"; $/;"	l	language:C++
+one	main.cpp	/^	MyClass	one; $/;"	l	language:C++
+printMsg	lib/my_class.cpp	/^static void printMsg (int i) $/;"	f	language:C++	file:	signature:(int i)
+printMsg	lib/my_class.cpp	/^void MyClass::printMsg (void) $/;"	f	language:C++	class:MyClass	signature:(void)
+printMsg	lib/my_class.h	/^		void printMsg(void); 	 $/;"	p	language:C++	class:MyClass	access:public	signature:(void)
+printMsg	main.cpp	/^	one.printMsg(); $/;"	p	language:C++	file:	signature:()
+printMsg	main.cpp	/^static void printMsg (char ch) $/;"	f	language:C++	file:	signature:(char ch)
+std::endl	lib/my_class.cpp	/^	std::cout << "I'M MyClass!" << std::endl; $/;"	m	language:C++	class:std	file:
+std::endl	lib/my_class.cpp	/^	std::cout << i << std::endl; $/;"	m	language:C++	class:std	file:
+std::endl	main.cpp	/^	std::cout << ch << std::endl; $/;"	m	language:C++	class:std	file:
