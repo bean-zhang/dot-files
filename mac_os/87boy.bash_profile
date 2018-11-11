@@ -21,11 +21,11 @@ if [ -d $HOME/Library/Python/3.6/bin ]; then
     export PATH=$HOME/Library/Python/3.6/bin:$PATH
 fi
 
-# added by Anaconda3 5.0.1 installer
+# added by Anaconda3 5.2.0 installer
 export PATH="/Users/admin/anaconda3/bin:$PATH"
 
-# added by spark-2.2.1-bin-hadoop2.7
-export PATH="/Users/admin/software/spark/spark-2.2.1-bin-hadoop2.7/bin:$PATH"
+# added by spark-2.3.1-bin-hadoop2.7
+export PATH="/Users/admin/software/spark/spark-current-version/bin:$PATH"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
