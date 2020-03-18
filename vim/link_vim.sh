@@ -16,25 +16,21 @@ vim_87boy=${dot_files}/vim/.vim
 
 if [ -f "${vimrc}" ]
 then
-	mv ${vimrc} ${vimrc}.bak
-	ln -s ${vimrc_87boy} ${vimrc}
-else
-	ln -s ${vimrc_87boy} ${vimrc}
+    mv ${vimrc} ${vimrc}.bak
 fi
+
+ln -s ${vimrc_87boy} ${vimrc}
 
 if [ -f "${gvimrc}" ]
 then
-	mv ${gvimrc} ${gvimrc}.bak
-	ln -s ${gvimrc_87boy} ${gvimrc}
-else
-	ln -s ${gvimrc_87boy} ${gvimrc}
+    mv ${gvimrc} ${gvimrc}.bak
 fi
+
+ln -s ${gvimrc_87boy} ${gvimrc}
 
 if [ -d "${vim}" ]
 then
     mv ${vim} ${vim}.bak
-    ln -s ${vim_87boy} ${vim}
-else
-    ln -s ${vim_87boy} ${vim}
 fi
 
+ln -s ${vim_87boy} ${vim}
