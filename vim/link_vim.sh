@@ -6,7 +6,7 @@
 # email: sjtuzb@gmail.com
 #
 
-dot_files=~/git/dot-files
+dot_files=~/Bean/git/dot-files
 vimrc=~/.vimrc
 vimrc_87boy=${dot_files}/vim/.vimrc
 gvimrc=~/.gvimrc

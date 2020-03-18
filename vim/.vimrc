@@ -327,14 +327,13 @@ nmap <silent> <Leader>i <Plug>IndentGuidesToggle
 " >>
 " 代码折叠
 
-set foldenable          " Enable folding
+"set foldenable          " Enable folding
 " 启动 vim 时关闭折叠代码
-"set nofoldenable
+set nofoldenable
 " 基于缩进或语法进行代码折叠
 set foldmethod=indent
 "set foldmethod=syntax
-set foldlevelstart=9
-"set foldlevelstart=10   " Open most folds by default
+set foldlevelstart=10   " Open most folds by default
 set foldnestmax=10      " 10 nested fold max
 " za: open or close this fold
 " zM: close all folds
