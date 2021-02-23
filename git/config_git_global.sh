@@ -20,4 +20,6 @@ git config --global color.interactive auto
 git config --global color.status auto
 git config --global color.ui true
 
+git config --global credential.helper cache
+
 git config --global -l
