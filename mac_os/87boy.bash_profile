@@ -47,3 +47,7 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bot
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
 
 alias jumpserver="ssh jumpserver"
+alias relay="ssh zhangbin@relay.bilibili.co"
+
+#export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+#export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
