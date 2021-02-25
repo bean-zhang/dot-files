@@ -1,0 +1,7 @@
+host relay
+  ControlMaster auto
+  ControlPath ~/.ssh/master-%r@%h:%p
+  HostName relay.bilibili.co
+  Port 22
+  User zhangbin
+
