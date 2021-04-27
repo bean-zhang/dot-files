@@ -1,7 +1,12 @@
+host jumpserver
+  HostName jumpserver.internal.leapstack.cn
+  Port 2222
+  User bzhang
+  IdentityFile ~/Bean/config/ssh/leapstack_jumpserver
+
 host relay
   ControlMaster auto
   ControlPath ~/.ssh/master-%r@%h:%p
   HostName relay.bilibili.co
   Port 22
   User zhangbin
-
