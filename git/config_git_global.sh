@@ -20,6 +20,8 @@ git config --global color.interactive auto
 git config --global color.status auto
 git config --global color.ui true
 
-git config --global credential.helper cache
+git config --global credential.helper cache # 缓存密码，默认15分钟
+git config --global credential.helper 'cache -timeout=3600' # 缓存密码，设置1小时
+git config --global credential.helper store # 记录密码，永久
 
 git config --global -l
