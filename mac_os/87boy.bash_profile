@@ -41,10 +41,13 @@ fi
 
 export PATH=$PATH:~/Bean/software/crawler/
 
-# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
-# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+# Set PATH, MANPATH, etc., for Homebrew.
+export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_PIP_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
+eval "$(/usr/local/bin/brew shellenv)"
 
 #alias jumpserver="ssh bzhang@jumpserver.internal.leapstack.cn"
 alias jumpserver="ssh jumpserver"
@@ -52,4 +55,7 @@ alias jumpserver="ssh jumpserver"
 alias relay="ssh relay"
 
 #export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-#export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+#export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+printf "\e[?2004l" # 终端复制粘贴后前后会多出0~和1~
+
