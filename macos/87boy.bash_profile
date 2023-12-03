@@ -12,27 +12,8 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export PATH="/usr/local/sbin:$PATH"
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+#export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 export MY_VIM_RC=~/.vimrc
-
-if [ -f ~/.git-completion.bash ]; then
-    . ~/.git-completion.bash
-fi
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/zb/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/zb/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/zb/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/zb/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # Set PATH, MANPATH, etc., for Homebrew.
 export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
@@ -55,10 +36,30 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init -)"
 fi
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/Caskroom/miniforge/base/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/Caskroom/miniforge/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/Caskroom/miniforge/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
 # added by spark-2.3.4-bin-hadoop2.7
-export PATH=~/Bean/software/spark/spark-current-version/bin:$PATH
+#export PATH=~/Bean/software/spark/spark-current-version/bin:$PATH
 #export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 #export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH=$PATH:~/Bean/software/crawler/
+#export PATH=$PATH:~/Bean/software/crawler/
 
 printf "\e[?2004l" # 终端复制粘贴后前后会多出0~和1~
+
