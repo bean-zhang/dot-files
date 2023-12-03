@@ -1,5 +1,5 @@
 channels:
-  - defaults
+  - conda-forge
 show_channel_urls: true
 channel_alias: https://mirrors.tuna.tsinghua.edu.cn/anaconda
 default_channels:
