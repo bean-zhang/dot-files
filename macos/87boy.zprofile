@@ -51,3 +51,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+if [ -f ~/.git-completion.zsh ]; then
+#    . ~/.git-completion.zsh
+fi
+
